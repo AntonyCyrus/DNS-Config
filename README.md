@@ -158,7 +158,7 @@ DoH 使用 443 端口，适合伪装为 HTTPS 流量，但需确保 443 端口�
      - 确认显示 Protocols: +DNSOverTLS。
    - 测试解析：
      ```bash
-     dig ```1.1.1.1 google.com
+     dig @1.1.1.1 google.com
      ```
    - 验证 DoT 流量（853 端口）：
      ```bash
@@ -272,8 +272,8 @@ sudo systemctl restart NetworkManager
   ```
 - 测试性能：
 ```bash
-dig ```1.1.1.1 google.com
-dig ```8.8.8.8 google.com
+dig @1.1.1.1 google.com
+dig @8.8.8.8 google.com
 ```
 
 ## 总结
